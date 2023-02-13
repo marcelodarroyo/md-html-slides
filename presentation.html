@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <title>HTML slides</title>
+
+  <!-- fontawesome -->
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+  integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <!-- highlight js css -->
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css">
+  
+  <link rel="stylesheet" href="css/slides.css">
+</head>
+<body>
+
+  <div class="container">
+    <div id="presentation-area">
+
+        <section class="presentation">
+
+          <div class="slide show">
+
+            <div class="heading">
+              <h1>Presentation slides</h1>
+            </div>
+
+            <div class="content grid center">
+              <input type="file" accept="*.md" onchange="loadFile(this)">
+            </div>
+
+          </div>
+
+        </section>
+
+        <section class="counter">
+          1 / 1
+        </section>
+
+        <section class="navigation">
+
+            <button id="full-screen" class="btn-screen show">
+              <i class="fas fa-expand"></i>
+            </button>
+
+            <button id="small-screen" class="btn-screen">
+              <i class="fas fa-compress"></i>
+            </button>
+    
+            <button id="left-btn" class="btn">
+              <i class="fas fa-solid fa-caret-left"></i>
+            </button>
+    
+            <button id="right-btn" class="btn">
+              <i class="fa-solid fa-caret-right"></i>
+            </button>
+    
+        </section>
+
+    </div>
+  </div>
+
+  <script src="js/td2svg.js" type="text/javascript"></script>
+  <script src="js/md2html.js" type="text/javascript"></script>
+  <script src="js/slides.js" type="text/javascript"></script>
+  
+  <script 
+  src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js">
+  </script>
+
+</body>
+</html>
+
